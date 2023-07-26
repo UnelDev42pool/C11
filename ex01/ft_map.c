@@ -6,16 +6,16 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 17:37:15 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/19 14:04:48 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/26 12:55:36 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int *ft_map(int *tab, int length, int(*f)(int))
+int	*ft_map(int *tab, int length, int (*f)(int))
 {
-	int i;
-	int *out;
+	int	i;
+	int	*out;
 
 	out = malloc(sizeof (int) * length);
 	if (!out)
@@ -50,4 +50,3 @@ int *ft_map(int *tab, int length, int(*f)(int))
 // 	}
 // 	free(truc);
 // }
-

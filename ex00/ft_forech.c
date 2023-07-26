@@ -6,13 +6,13 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 17:25:37 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/18 17:36:01 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/26 12:55:30 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (i < length)

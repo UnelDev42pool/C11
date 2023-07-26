@@ -6,13 +6,13 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 14:04:43 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/19 14:04:44 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/26 12:55:38 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_any(char **tab, int(*f)(char*))
+int	ft_any(char **tab, int (*f)(char*))
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (tab[i])
