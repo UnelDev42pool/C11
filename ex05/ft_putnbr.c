@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/26 10:28:48 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/26 11:46:34 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/26 17:11:05 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,16 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
+	if (nb == -2147483648)
+	{
+		nb = 147483648;
+		ft_putchar('-');
+		ft_putchar('2');
+	}
 	if (nb < 0)
 	{
-		return ;
+		nb = -nb;
+		ft_putchar('-');
 	}
 	if (nb >= 0 && nb < 10)
 	{
