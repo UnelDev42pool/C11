@@ -6,7 +6,7 @@
 /*   By: edi-iori <edi-iori@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/20 11:21:22 by edi-iori          #+#    #+#             */
-/*   Updated: 2023/07/26 17:18:48 by edi-iori         ###   ########lyon.fr   */
+/*   Updated: 2023/07/27 13:20:53 by edi-iori         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ int			ft_atoi(char *str);
 void		ft_putnbr(int nb);
 typedef int	(*t_f)(int, int, int*);
 
-void calcul(int number,int number2, char *argv[], int state)
+void	calcul(int number, int number2, char *argv[], int state)
 {
 	const t_f	func[5] = {&add, &minus, &multiply, &divide, &modulo};
-	
+
 	if (ft_strcmp(argv[2], "+") == 0)
 		ft_putnbr(func[0](number, number2, &state));
 	else if (ft_strcmp(argv[2], "-") == 0)
